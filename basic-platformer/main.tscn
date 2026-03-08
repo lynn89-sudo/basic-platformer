@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://dayi6m6jt17om"]
 
+[ext_resource type="Script" uid="uid://c4e1nuocscvm" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://dle82rfkbv2k" path="res://icon.svg" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://cetq4o6kjg0w7" path="res://mission-red-brick-4x4-encaustic-cement-tile-229796_large.jpg.webp" id="2_0xm2m"]
 
@@ -1266,6 +1267,10 @@ sources/0 = SubResource("TileSetAtlasSource_h2yge")
 [node name="Node" type="Node" unique_id=618168445]
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1613024921]
+script = ExtResource("1_h2yge")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1836461208]
+position_smoothing_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1722744277]
 position = Vector2(-0.5, -1.5)
